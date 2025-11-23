@@ -82,17 +82,6 @@ response = client.put("/users/1", data={"name": "Jane"})
 response = client.delete("/users/1")
 ```
 
-**Using API Utilities**
-```python
-from tests.helpers.api.reqres_api_utility import ReqResApiUtility
-from tests.helpers.api import constants
-
-api = ReqResApiUtility(base_url=constants.BASE_URL, timeout=constants.TEST_TIMEOUT, content_type="json")
-user = api.get_user(user_id=2)
-users = api.list_users(page=1)
-new_user = api.create_user(name="John Doe", job="Engineer")
-```
-
 ## Architecture
 
 **Design Patterns**
@@ -160,8 +149,6 @@ class MyApiUtility:
 - requests (>=2.0.0)
 - allure-pytest (>=2.9.45, optional)
 - setuptools (>=45)
-
-```
 
 ## License
 
