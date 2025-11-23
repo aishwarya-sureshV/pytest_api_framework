@@ -1,0 +1,5 @@
+pytest>=7.0
+requests>=2.0.0
+allure-pytest>=2.9.45
+setuptools>=45
+
